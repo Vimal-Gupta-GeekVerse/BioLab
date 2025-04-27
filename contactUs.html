@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="image/BioLabFevicon.svg" />
+    <title>Bio Lab</title>
+
+    <!-- <link fetchpriority="high" rel="preload"  href="image/BannerImg1.png" as="image" type="image/png" /> -->
+
+    <!-- Preload -->
+    <link rel="preconnect" href="js/dynamic.js" />
+    <link rel="dns-prefetch" href="js/dynamic.js" />
+    <script async src="js/dynamic.js"></script>
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    
+    <link rel="preload" as="style" href="css/responsive.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="preconnect" href="https://kit.fontawesome.com" />
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
+
+    <script
+      src="https://kit.fontawesome.com/52ca9e0df4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- header start -->
+
+    <header>
+      <div class="miniHeader">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-auto d-flex flex-wrap">
+              <div class="col-auto me-4">
+                <a class="headIcon" href="mailto:contact@biolabdemo.com"
+                  ><i class="fa-solid fa-at"></i>contact@biolabdemo.com</a
+                >
+              </div>
+              <div class="col-auto me-4">
+                <a class="headIcon" href=""
+                  ><i class="fa-solid fa-location-crosshairs"></i>New York, USA</a
+                >
+              </div>
+              <div class="col-auto">
+                <a class="headIcon" href="javascript:void(0)"
+                  ><i class="fa-regular fa-clock"></i> Mon - Sat 10.00-21.00,
+                  Sun - Closed</a
+                >
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <div class="callcard">
+                <a href="tel:+1 800 555 9876"
+                  ><i class="fa-solid fa-square-phone"></i> +1-800-555-9876</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapheder">
+        <div id="main-header">
+          <div id="header"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- header start -->
+
+    <!-- banner start -->
+    <section id="headBelowContent" class="NewBanner defoultPadding">
+      <div  class="container">
+         <h1 class="display-1">Contact Us</h1>
+      </div>
+    </section>
+    <!-- banner start End-->
+
+    <!-- form section start  -->
+<section class="formSection defaultPadding">
+    <div class="container">
+        <div class="row  align-items-center callDetails">
+        
+              <div class="col-xl-6 pe-xl-5">
+                <h2 class="secH fw-normal">Consult With <strong> Our Doctors </strong> Today</h2>
+                <p class="mb-5">Get expert medical advice from our specialists. Schedule a consultation today for accurate diagnoses, personalized care, and reliable health solutions.</p>
+
+                <img src="image/ContactImg.png" alt="Doctor taking care of patient">
+                
+              </div>
+  
+              <div class="col-xl-6 formPart">
+
+                <form class="row needs-validation ContactForm" id="contactForm" novalidate="">
+
+                    <div class="col-md-6">
+                        <div class="col-12">
+                            <label for="validationCustom01" class="form-label">Your Name </label>
+                            <input type="text" class="form-control" id="validationCustom01" required="">
+                            <div class="invalid-feedback">Please enter your name.</div>
+                          </div>
+                          <div class="col-12">
+                            <label for="validationEmail" class="form-label">Your Email </label>
+                            <input type="text" class="form-control" id="validationEmail">
+                          </div>
+                         
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="col-12">
+                            <label for="PhoneNo" class="form-label">Your Mobile Number </label>
+                            <input type="number" class="form-control" id="PhoneNo" required="">
+                            <div class="invalid-feedback">Please enter your Mobile Number.</div>
+                          </div>
+                        <div class="col-12">
+                            <label for="validationSubject" class="form-label">Subject </label>
+                            <input type="text" class="form-control" id="validationSubject" required="">
+                            <div class="invalid-feedback">Please enter your Subject.</div>
+                          </div> 
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="validationTextarea" class="form-label">Message </label>
+                            <textarea class="form-control" rows="4" id="validationTextarea" required=""></textarea>
+                            <div class="invalid-feedback">Please write your message.</div>
+                          </div>
+                    </div>
+         
+                  <!-- Modal Launcher for Mobile -->
+                  <button type="button" class="btn btnFillSmall mt-4 d-table mx-auto d-md-none" data-bs-toggle="modal" data-bs-target="#whatsappButton">
+                  Submit
+                  </button>
+        
+                  <!-- WhatsApp Modal -->
+                  <div class="modal fade" id="whatsappButton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text" id="exampleModalLabel">
+                            Select WhatsApp Type
+                          </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                          <div class="options">
+                            <button id="whatsappStandard" class="btn option">
+                              <img src="image/whatsapp-icon.png" alt="WhatsApp">
+                            </button>
+                            <button id="whatsappBusiness" class="btn option">
+                              <img src="image/whatsapp-business-icon.png" alt="WhatsApp Business">
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Submit Button for Desktop -->
+                  <div class="col-12 d-none d-md-table">
+                    <button class="btnFillSmall mt-4 d-table mx-auto" id="desktopBtn" type="submit">Submit</button>
+                  </div>
+                </form>
+                 
+              </div>
+          </div>
+    </div>
+
+</section>
+
+    <!-- form section end -->
+
+    <!-- map section start  -->
+    <section class="mapSection defaultPadding">
+        <div class="container">
+           <div class="row align-items-center">
+            <div class="col-lg-6 col-xl-5"> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.008402929643!2d-117.92154912478475!3d33.812096230373534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd7d12b3b5e6b%3A0x2ef62f8418225cfa!2sDisneyland%20Park!5e0!3m2!1sen!2sin!4v1744900882810!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6 col-xl-7 ps-xl-5">
+                <div class="contactInfo">
+                  <div class="col-xl-6 col-lg-12 col-md-6 col-12 ">
+                    <div class="contactCard">
+                      <div class="contactIco">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="none" stroke="#13bfb1" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" d="M12.531 20.217c-.3-.137-.599-.274-.898-.437a18.6 18.6 0 0 1-4.005-3.044a17.6 17.6 0 0 1-3.743-5.078a11 11 0 0 1-.998-3.243a5.8 5.8 0 0 1 .362-3.381a6.2 6.2 0 0 1 1.01-1.248A1.76 1.76 0 0 1 5.508 3.2c.493.074.94.332 1.248.723c.674.749 1.397 1.423 2.108 2.134c.28.24.455.58.487.948c-.012.31-.131.605-.337.836c-.237.3-.524.574-.798.86a1.5 1.5 0 0 0-.45 1.248c.172.535.467 1.023.861 1.423a34 34 0 0 0 1.485 1.883a13.3 13.3 0 0 0 3.38 2.795a1.25 1.25 0 0 0 1.249.15c.423-.237.8-.55 1.11-.923a1.64 1.64 0 0 1 1.073-.587c.374.02.726.18.986.45c.336.286.623.623.935.935s.562.537.824.823q.471.416.885.886c.214.277.317.625.287.973a2.05 2.05 0 0 1-.686 1.06a4.67 4.67 0 0 1-3.668 1.423a10.4 10.4 0 0 1-3.955-1.023Zm5.22-9.019a5.06 5.06 0 0 0-5.059-5.059m8.527 4.705a8.094 8.094 0 0 0-8.095-8.094"/></svg>
+                      </div>
+                      <div class="contactText">
+                           <h4 class="fifthH">Phone Number</h4>
+                           <p>+91 9198 782842</p>
+                      </div>
+                      <a class="anchorAbs" href="tel:+91 9198782842"></a>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-md-6 col-12 ">
+                    <div class="contactCard">
+                      <div class="contactIco">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 28 28"><path fill="#13bfb1" d="M5.754 4a3.75 3.75 0 0 0-3.75 3.75v11.5A3.75 3.75 0 0 0 5.754 23H22.25A3.75 3.75 0 0 0 26 19.25V7.75A3.75 3.75 0 0 0 22.25 4zm-2.25 3.75a2.25 2.25 0 0 1 2.25-2.25H22.25a2.25 2.25 0 0 1 2.25 2.25v.779L14 13.907L3.504 8.531zm0 2.467l10.154 5.2a.75.75 0 0 0 .684 0L24.5 10.215v9.036a2.25 2.25 0 0 1-2.25 2.25H5.755a2.25 2.25 0 0 1-2.25-2.25z"/></svg>
+                      </div>
+                      <div class="contactText">
+                           <h4 class="fifthH">Email</h4>
+                           <p>support@biolabdemo.com</p>
+                      </div>
+                      <a class="anchorAbs" href="mailto:support@biolabdemo.com"></a>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-md-6 col-12 ">
+                    <div class="contactCard">
+                      <div class="contactIco">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 20 20"><path fill="#13bfb1" d="m19.799 5.165l-2.375-1.83a2 2 0 0 0-.521-.237A2 2 0 0 0 16.336 3H9.5l.801 5h6.035c.164 0 .369-.037.566-.098s.387-.145.521-.236l2.375-1.832c.135-.091.202-.212.202-.334s-.067-.243-.201-.335M8.5 1h-1a.5.5 0 0 0-.5.5V5H3.664c-.166 0-.37.037-.567.099c-.198.06-.387.143-.521.236L.201 7.165C.066 7.256 0 7.378 0 7.5c0 .121.066.242.201.335l2.375 1.832c.134.091.323.175.521.235c.197.061.401.098.567.098H7v8.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-17a.5.5 0 0 0-.5-.5"/></svg>
+                      </div>
+                      <div class="contactText">
+                           <h4 class="fifthH">Address</h4>
+                           <p>123 Health Street, New York, USA</p>
+                      </div>
+                      <a class="anchorAbs" target="_blank" href="https://maps.app.goo.gl/tosmbMYgoSi2bngJ8"></a>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-md-6 col-12 ">
+                    <div class="contactCard">
+                      <div class="contactIco">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="#13bfb1" d="M4 19V8h16v3.29c.72.22 1.4.54 2 .97V8c0-1.11-.89-2-2-2h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h7.68c-.3-.62-.5-1.29-.6-2zm6-15h4v2h-4z"/><path fill="#13bfb1" d="M18 13c-2.76 0-5 2.24-5 5s2.24 5 5 5s5-2.24 5-5s-2.24-5-5-5m1.65 7.35L17.5 18.2V15h1v2.79l1.85 1.85z"/></svg>
+                      </div>
+                      <div class="contactText">
+                           <h4 class="fifthH">Working Hours</h4>
+                           <p>Mon - Sat 10.00-21.00, Sun - Closed</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- map section end -->
+
+
+    <!-- whatsapp FAB icon -->
+    <div class="fab-container">
+      <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=919198782842">
+        <svg xmlns="http://www.w3.org/2000/svg" width="59.54px" height="60px" viewBox="0 0 256 258">
+          <defs>
+            <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
+              <stop offset="0%" stop-color="#1faf38" />
+              <stop offset="100%" stop-color="#60d669" />
+            </linearGradient>
+            <linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%">
+              <stop offset="0%" stop-color="#f9f9f9" />
+              <stop offset="100%" stop-color="#fff" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#logosWhatsappIcon0)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004" />
+          <path fill="url(#logosWhatsappIcon1)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z" />
+          <path fill="#fff" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64" />
+        </svg>
+      </a>
+    </div>
+
+
+    <!-- Call FAB icon -->
+    <div class="Call-fab-container">
+      <a rel="noopener" target="_blank" href="tel:+91 9198782842">
+        <img style="height: 60px; width: 60px" src="image/phone-call.png" alt="phone icon" />
+      </a>
+    </div>
+
+
+
+    <!-- footer section start  -->
+    <footer id="footer" class="footer defaultPadding"></footer>
+
+    <!-- footer section end  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Header Script
+      // Debounce function to limit how often the event handler executes
+      function debounce(func, delay) {
+        let timeout;
+        return function (...args) {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), delay);
+        };
+      }
+
+      // Header scroll handler
+      function handleScroll() {
+        const header = document.getElementById("main-header");
+        const headerOffset = header.offsetTop;
+        const headerHeight = header.offsetHeight;
+        const belowContent = document.getElementById("headBelowContent");
+        const belowContentOffset = belowContent.offsetTop;
+        const belowContentHeight = belowContent.offsetHeight;
+
+        if (window.pageYOffset > headerOffset + headerHeight + 5) {
+          header.classList.add("sticky-header", "visible");
+          header.classList.remove("headerAnimate");
+
+          applyNavbarStyles();
+        } else {
+          if (
+            window.pageYOffset <
+            belowContentOffset + belowContentHeight + 4
+          ) {
+            header.classList.remove("sticky-header", "visible");
+            header.classList.add("headerAnimate");
+          }
+        }
+      }
+
+      // Function to handle navbar styles based on layout
+      function applyNavbarStyles() {
+        const navbar = document.getElementById("navbarSupportedContent");
+
+        if (window.matchMedia("(max-device-width: 991.98px)").matches) {
+          navbar.setAttribute(
+            "style",
+            "max-height: calc(100vh - 112px); overflow-y: auto;"
+          );
+        } else if (window.matchMedia("(max-device-width: 1199.98px)").matches) {
+          navbar.setAttribute("style", "");
+        } else {
+          navbar.setAttribute("style", "");
+        }
+      }
+
+      // Attach debounced scroll and resize events
+      const debouncedHandleScroll = debounce(handleScroll, 0);
+      const debouncedApplyNavbarStyles = debounce(applyNavbarStyles, 0);
+
+      window.addEventListener("scroll", debouncedHandleScroll);
+      window.addEventListener("resize", debouncedApplyNavbarStyles);
+
+      // Run once on page load to ensure styles are applied correctly
+      window.addEventListener("load", () => {
+        debouncedApplyNavbarStyles();
+        debouncedHandleScroll();
+      });
+    </script>
+
+<script>
+    (() => {
+      "use strict";
+  
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll(".needs-validation");
+  
+      // Loop over them and prevent submission
+      Array.from(forms).forEach((form) => {
+        form.addEventListener(
+          "submit",
+          (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+  
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  
+    $(document).ready(function () {
+      // Debounce function to limit resize frequency
+      function debounce(func, wait) {
+        let timeout;
+        return function (...args) {
+          const context = this;
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+      }
+  
+      // Construct WhatsApp Message
+      function constructWhatsAppMessage() {
+        const name = $("#validationCustom01").val();
+          const email = $("#validationEmail").val();
+          const phone = $("#PhoneNo").val();
+          const Subject = $("#validationSubject").val();
+          const message = $("#validationTextarea").val();
+    
+          // Construct the WhatsApp message
+          return `Hello, I have an enquiry:\n\nName: ${name}\nEmail: ${email || "Not provided"}\nPhone: ${phone}\nSubject: ${Subject || "Not provided"}\nMessage: ${message || "Not provided"}`;
+      }
+  
+      // Form Validation Function
+      function validateForm() {
+        const form = document.querySelector("#contactForm");
+        if (!form.checkValidity()) {
+          form.classList.add("was-validated");
+          return false;
+        }
+        return true;
+      }
+  
+      // Clear form fields after submission
+      function clearForm() {
+        const form = document.querySelector("#contactForm");
+        form.reset(); // Reset all form fields
+        form.classList.remove("was-validated"); // Remove validation classes
+      }
+  
+      // Initialize logic based on screen size
+      function initializeLogic() {
+        const isMobile = $(window).width() <= 767.98;
+        const phoneNumber = "919198782842";
+        const standardWhatsAppUrl = `intent://send?phone=${phoneNumber}&text=`;
+        const businessWhatsAppUrl = `intent://send?phone=${phoneNumber}&text=`;
+  
+        if (isMobile) {
+          console.log("Initializing Mobile Logic");
+  
+          // Handle WhatsApp Standard Button Click
+          $("#whatsappStandard").off("click").on("click", function () {
+            event.preventDefault(); // Stop the form's default behavior
+            if (!validateForm()) return;
+  
+            const message = constructWhatsAppMessage();
+            const encodedMessage = encodeURIComponent(message);
+  
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+            // Check if Android device
+            if (/android/i.test(userAgent)) {
+              // Redirect to WhatsApp app
+              window.location.href = `${standardWhatsAppUrl}${encodedMessage}#Intent;scheme=whatsapp;package=com.whatsapp;end`;
+            } else {
+              // Fallback for web WhatsApp
+              window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            }
+  
+            // Clear the form after redirection
+            clearForm();
+          });
+  
+          // Handle WhatsApp Business Button Click
+          $("#whatsappBusiness").off("click").on("click", function () {
+            event.preventDefault(); // Stop the form's default behavior
+            if (!validateForm()) return;
+  
+            const message = constructWhatsAppMessage();
+            const encodedMessage = encodeURIComponent(message);
+  
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+            // Check if Android device
+            if (/android/i.test(userAgent)) {
+              // Redirect to WhatsApp app
+              window.location.href = `${businessWhatsAppUrl}${encodedMessage}#Intent;scheme=whatsapp;package=com.whatsapp.w4b;end`;
+            } else {
+              // Fallback for web WhatsApp
+              window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            }
+  
+            // Clear the form after redirection
+            clearForm();
+          });
+        } else {
+          console.log("Initializing Desktop Logic");
+  
+          // Handle Desktop Submit Button Click
+          $("#desktopBtn").off("click").on("click", function (event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            if (!validateForm()) return;
+  
+            const message = constructWhatsAppMessage();
+            const encodedMessage = encodeURIComponent(message);
+  
+            // Use WhatsApp Web URL for desktop
+            const whatsappWebUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+            window.open(whatsappWebUrl, "_blank");
+  
+            // Clear the form after opening WhatsApp Web
+            clearForm();
+          });
+        }
+      }
+  
+      // Initialize logic on page load
+      initializeLogic();
+  
+      // Reinitialize logic on window resize with debounce
+      $(window).on(
+        "resize",
+        debounce(function () {
+          initializeLogic();
+        }, 200)
+      );
+    });
+  </script>
+
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
