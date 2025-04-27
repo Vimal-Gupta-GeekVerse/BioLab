@@ -308,7 +308,7 @@ background-color: var(--brandHover);
 }
 
 .Banner{
-  background:linear-gradient(to right, #ffffffe3, #1485cb1e) no-repeat center, url('../image/HomeBanner.png') no-repeat center;
+  background:linear-gradient(to right, #ffffffe3, #1485cb1e) no-repeat center, url('../image/HomeBanner.webp') no-repeat center;
   background-size: cover;
 }
 
@@ -760,7 +760,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 16px -6px inset, rgba(0, 0, 0, 0.3) 0
   padding: 10em 12px; 
   text-align: center;
   color: #ffffff;
-  background: linear-gradient(to right,#13bfb194,#0b6b63a8), url('../image/contactBanner.png') no-repeat center;
+  background: linear-gradient(to right,#13bfb194,#0b6b63a8), url('../image/contactBanner.webp') no-repeat center;
   background-size: cover;
 }
 
@@ -854,7 +854,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 16px -6px inset, rgba(0, 0, 0, 0.3) 0
 
 /* map section  start */
 .mapSection{
-  background: linear-gradient(to right, rgba(19, 191, 177, 0.58), rgba(11, 107, 99, 0.66)) 0% 0% / cover, url('../image/mapImg.png') center center no-repeat;
+  background: linear-gradient(to right, rgba(19, 191, 177, 0.58), rgba(11, 107, 99, 0.66)) 0% 0% / cover, url('../image/mapImg.webp') center center no-repeat;
   background-size: cover;
 }
 
@@ -896,7 +896,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 16px -6px inset, rgba(0, 0, 0, 0.3) 0
 
 
 .NewBanner.aboutPage0 {
-  background: url('../image/AboutBanner.png') no-repeat center bottom;
+  background: url('../image/AboutBanner.webp') no-repeat center bottom;
   background-size: cover;
 }
 
